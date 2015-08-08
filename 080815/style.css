@@ -1,0 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:700);
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    width:100%;
+    background:hsla(0,5%,5%,1);
+    font-family: 'Ubuntu', sans-serif;
+    font-size:1.05em;
+}
+canvas {
+    left: 50%;
+    background:hsla(0,5%,10%,1);
+    position: absolute;
+    top: 50%;
+    transform: translate( -50%, -50%);
+    border: 10px solid hsla(0, 0%, 0%, 1);
+    border-radius:2%;
+}
+
