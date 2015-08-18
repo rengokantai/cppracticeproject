@@ -1,0 +1,43 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
+
+.box-with-text {
+    background-image: -webkit-linear-gradient(crimson 50%, white 50%);
+    background-repeat: repeat;
+    background-position: 0 0;
+    background-size: 100% 50px;                     /* 100% = text width. Because text is non-block element. The width is based on text's width*/
+    -webkit-text-fill-color: transparent;       /* Text fallthrough effect. Or else the text will be white color*/
+    -webkit-background-clip: text;              /* Only clip text. Or else it shows all background*/
+    -webkit-animation: stripes 2s linear infinite;
+    animation: stripes 2s linear infinite;
+}
+
+@-webkit-keyframes stripes {
+    100% {
+        background-position: 0 -50px;
+    }
+}
+
+@keyframes stripes {
+    100% {
+        background-position: 0 -50px;
+    }
+}
+/* Other stuff */
+body {
+    overflow: hidden;
+    background: #000;
+    color: #FFF;
+}
+
+.box-with-text {
+    position: absolute;  /* If width:100% then the text will expand the container*/
+    top: 50%;
+    left: 50%;
+    white-space: nowrap;
+    text-align: center;
+    text-transform: uppercase;
+    font: bold 26vmax/.8 Open Sans, Impact;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
