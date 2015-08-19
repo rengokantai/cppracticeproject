@@ -1,0 +1,320 @@
+body {
+  overflow: hidden; }
+
+.holder {
+  width: 500px;
+  height: 250px;
+  position: relative; }
+  .holder .circle {
+    transform-origin: center bottom;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    border-bottom: none;
+    position: absolute; }
+  .holder .circle:nth-of-type(1) {
+    background-color: #000;
+    border-radius: 25px 25px 0 0;
+    /* can not use 100% here, must same as width or whichever is larger between w/h */
+    border-bottom: none;
+    width: 25px;
+    height: 12.5px;
+    z-index: 15;
+    animation: anim-1 10s infinite ease-in-out; }
+@keyframes anim-1 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(360deg); } }
+@-webkit-keyframes anim-1 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(360deg); } }
+  .holder .circle:nth-of-type(2) {
+    border: 13px solid #000;
+    border-radius: 31px 31px 0 0;
+    /* can not use 100% here, must same as width or whichever is larger between w/h */
+    border-bottom: none;
+    width: 31px;
+    height: 15.5px;
+    z-index: 14;
+    animation: anim-2 10s infinite ease-in-out; }
+@keyframes anim-2 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(720deg); } }
+@-webkit-keyframes anim-2 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(720deg); } }
+  .holder .circle:nth-of-type(3) {
+    border: 13px solid #000;
+    border-radius: 62px 62px 0 0;
+    /* can not use 100% here, must same as width or whichever is larger between w/h */
+    border-bottom: none;
+    width: 62px;
+    height: 31px;
+    z-index: 13;
+    animation: anim-3 10s infinite ease-in-out; }
+@keyframes anim-3 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(1080deg); } }
+@-webkit-keyframes anim-3 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(1080deg); } }
+  .holder .circle:nth-of-type(4) {
+    border: 13px solid #000;
+    border-radius: 93px 93px 0 0;
+    /* can not use 100% here, must same as width or whichever is larger between w/h */
+    border-bottom: none;
+    width: 93px;
+    height: 46.5px;
+    z-index: 12;
+    animation: anim-4 10s infinite ease-in-out; }
+@keyframes anim-4 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(1440deg); } }
+@-webkit-keyframes anim-4 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(1440deg); } }
+  .holder .circle:nth-of-type(5) {
+    border: 13px solid #000;
+    border-radius: 124px 124px 0 0;
+    /* can not use 100% here, must same as width or whichever is larger between w/h */
+    border-bottom: none;
+    width: 124px;
+    height: 62px;
+    z-index: 11;
+    animation: anim-5 10s infinite ease-in-out; }
+@keyframes anim-5 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(1800deg); } }
+@-webkit-keyframes anim-5 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(1800deg); } }
+  .holder .circle:nth-of-type(6) {
+    border: 13px solid #000;
+    border-radius: 155px 155px 0 0;
+    /* can not use 100% here, must same as width or whichever is larger between w/h */
+    border-bottom: none;
+    width: 155px;
+    height: 77.5px;
+    z-index: 10;
+    animation: anim-6 10s infinite ease-in-out; }
+@keyframes anim-6 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(2160deg); } }
+@-webkit-keyframes anim-6 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(2160deg); } }
+  .holder .circle:nth-of-type(7) {
+    border: 13px solid #000;
+    border-radius: 186px 186px 0 0;
+    /* can not use 100% here, must same as width or whichever is larger between w/h */
+    border-bottom: none;
+    width: 186px;
+    height: 93px;
+    z-index: 9;
+    animation: anim-7 10s infinite ease-in-out; }
+@keyframes anim-7 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(2520deg); } }
+@-webkit-keyframes anim-7 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(2520deg); } }
+  .holder .circle:nth-of-type(8) {
+    border: 13px solid #000;
+    border-radius: 217px 217px 0 0;
+    /* can not use 100% here, must same as width or whichever is larger between w/h */
+    border-bottom: none;
+    width: 217px;
+    height: 108.5px;
+    z-index: 8;
+    animation: anim-8 10s infinite ease-in-out; }
+@keyframes anim-8 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(2880deg); } }
+@-webkit-keyframes anim-8 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(2880deg); } }
+  .holder .circle:nth-of-type(9) {
+    border: 13px solid #000;
+    border-radius: 248px 248px 0 0;
+    /* can not use 100% here, must same as width or whichever is larger between w/h */
+    border-bottom: none;
+    width: 248px;
+    height: 124px;
+    z-index: 7;
+    animation: anim-9 10s infinite ease-in-out; }
+@keyframes anim-9 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(3240deg); } }
+@-webkit-keyframes anim-9 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(3240deg); } }
+  .holder .circle:nth-of-type(10) {
+    border: 13px solid #000;
+    border-radius: 279px 279px 0 0;
+    /* can not use 100% here, must same as width or whichever is larger between w/h */
+    border-bottom: none;
+    width: 279px;
+    height: 139.5px;
+    z-index: 6;
+    animation: anim-10 10s infinite ease-in-out; }
+@keyframes anim-10 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(3600deg); } }
+@-webkit-keyframes anim-10 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(3600deg); } }
+  .holder .circle:nth-of-type(11) {
+    border: 13px solid #000;
+    border-radius: 310px 310px 0 0;
+    /* can not use 100% here, must same as width or whichever is larger between w/h */
+    border-bottom: none;
+    width: 310px;
+    height: 155px;
+    z-index: 5;
+    animation: anim-11 10s infinite ease-in-out; }
+@keyframes anim-11 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(3960deg); } }
+@-webkit-keyframes anim-11 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(3960deg); } }
+  .holder .circle:nth-of-type(12) {
+    border: 13px solid #000;
+    border-radius: 341px 341px 0 0;
+    /* can not use 100% here, must same as width or whichever is larger between w/h */
+    border-bottom: none;
+    width: 341px;
+    height: 170.5px;
+    z-index: 4;
+    animation: anim-12 10s infinite ease-in-out; }
+@keyframes anim-12 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(4320deg); } }
+@-webkit-keyframes anim-12 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(4320deg); } }
+  .holder .circle:nth-of-type(13) {
+    border: 13px solid #000;
+    border-radius: 372px 372px 0 0;
+    /* can not use 100% here, must same as width or whichever is larger between w/h */
+    border-bottom: none;
+    width: 372px;
+    height: 186px;
+    z-index: 3;
+    animation: anim-13 10s infinite ease-in-out; }
+@keyframes anim-13 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(4680deg); } }
+@-webkit-keyframes anim-13 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(4680deg); } }
+  .holder .circle:nth-of-type(14) {
+    border: 13px solid #000;
+    border-radius: 403px 403px 0 0;
+    /* can not use 100% here, must same as width or whichever is larger between w/h */
+    border-bottom: none;
+    width: 403px;
+    height: 201.5px;
+    z-index: 2;
+    animation: anim-14 10s infinite ease-in-out; }
+@keyframes anim-14 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(5040deg); } }
+@-webkit-keyframes anim-14 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(5040deg); } }
+  .holder .circle:nth-of-type(15) {
+    border: 13px solid #000;
+    border-radius: 434px 434px 0 0;
+    /* can not use 100% here, must same as width or whichever is larger between w/h */
+    border-bottom: none;
+    width: 434px;
+    height: 217px;
+    z-index: 1;
+    animation: anim-15 10s infinite ease-in-out; }
+@keyframes anim-15 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(5400deg); } }
+@-webkit-keyframes anim-15 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(5400deg); } }
+  .holder .circle:nth-of-type(16) {
+    border: 13px solid #000;
+    border-radius: 465px 465px 0 0;
+    /* can not use 100% here, must same as width or whichever is larger between w/h */
+    border-bottom: none;
+    width: 465px;
+    height: 232.5px;
+    z-index: 0;
+    animation: anim-16 10s infinite ease-in-out; }
+@keyframes anim-16 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(5760deg); } }
+@-webkit-keyframes anim-16 {
+  0% {
+    transform: translateX(-50%) rotate(0deg); }
+  100% {
+    transform: translateX(-50%) rotate(5760deg); } }
+
+/*# sourceMappingURL=style.css.map */

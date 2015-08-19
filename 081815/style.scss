@@ -1,0 +1,59 @@
+
+$duration:10s;
+$ease:ease-in-out;
+body{
+  overflow:hidden;
+}
+.holder{
+  width:500px;
+  height: 250px;
+
+  position: relative;
+
+
+  .circle{
+    transform-origin: center bottom;
+    left: 50%;
+    bottom: 0;
+    transform:translateX(-50%);
+    border-bottom: none;
+
+    position: absolute;
+  }
+  @for $i from 1 through 16{
+    .circle:nth-of-type(#{$i}){
+      $size: 13px;
+      @if($i==1){
+        $size:25px;
+      background-color: #000;
+    }@else{
+      border:$size solid #000;
+        $size:31px * ($i - 1);
+    }border-radius:$size $size 0 0;     /* can not use 100% here, must same as width or whichever is larger between w/h */
+      border-bottom: none;
+      width: $size;
+      height: $size/2;
+      z-index: 16 - $i;
+      animation:anim-#{$i} $duration infinite $ease ;
+    }
+    @keyframes anim-#{$i} {
+      0%{
+          transform: translateX(-50%) rotate(0deg);
+      }
+      100%{
+        transform: translateX(-50%) rotate($i*360deg);
+      }
+    }
+
+    @-webkit-keyframes anim-#{$i} {
+      0%{
+        transform: translateX(-50%) rotate(0deg);
+      }
+      100%{
+        transform: translateX(-50%) rotate($i*360deg);
+      }
+    }
+
+
+  }
+}
