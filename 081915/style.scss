@@ -1,0 +1,36 @@
+body {
+  background: #7c02b0;
+}
+.container {
+  margin: 0 auto;
+  width: 480px;
+}
+.circle{
+  float: left;
+  margin: 20px;
+  position: relative;
+  left: 80px;
+  width: 200px;
+  height: 200px;
+
+  &:nth-child(2),
+  &:nth-child(3){
+    left: -80px;
+    transform: scaleX(-1);
+  }
+}
+.dot {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #c7e602;
+  box-shadow: inset 10px 0 15px #555c09, -8px 0  15px 2px #300833;
+  transform-origin: 20px 100px;
+
+  @for $i from 1 to 8{
+    &:nth-child(#{$i}){
+      transform: rotateZ(#{$i * 45}deg);
+    }
+  }
+}

@@ -1,0 +1,42 @@
+body {
+  background: #7c02b0; }
+
+.container {
+  margin: 0 auto;
+  width: 480px; }
+
+.circle {
+  float: left;
+  margin: 20px;
+  position: relative;
+  left: 80px;
+  width: 200px;
+  height: 200px; }
+  .circle:nth-child(2), .circle:nth-child(3) {
+    left: -80px;
+    transform: scaleX(-1); }
+
+.dot {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #c7e602;
+  box-shadow: inset 10px 0 15px #555c09, -8px 0  15px 2px #300833;
+  transform-origin: 20px 100px; }
+  .dot:nth-child(1) {
+    transform: rotateZ(45deg); }
+  .dot:nth-child(2) {
+    transform: rotateZ(90deg); }
+  .dot:nth-child(3) {
+    transform: rotateZ(135deg); }
+  .dot:nth-child(4) {
+    transform: rotateZ(180deg); }
+  .dot:nth-child(5) {
+    transform: rotateZ(225deg); }
+  .dot:nth-child(6) {
+    transform: rotateZ(270deg); }
+  .dot:nth-child(7) {
+    transform: rotateZ(315deg); }
+
+/*# sourceMappingURL=style.css.map */
